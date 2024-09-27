@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Eventos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        
+        <section>
+
+        <!-- Formulario para agregar eventos -->
+        <form id="evento-form">
+
+            <h1  class="title">Agenda de Eventos</h1>
+
+            <label  for="titulo">Título del Evento:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="fecha">Fecha del Evento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <button type="submit" id="agregar-evento">Agregar Evento</button>
+
+   
+
+
+        </form>
+
+        <br>
+        <hr>
+        <br>
+        <!-- Campo de búsqueda -->
+        <label for="buscar">Buscar Evento:</label>
+        <input type="text" id="buscar" placeholder="Buscar por título o fecha">
+
+        </section>
+
+        
+        <!-- Contenedor donde se mostrarán los eventos -->
+        <div id="lista-eventos">
+            <h2 class="title">Eventos</h2>
+            <ul id="eventos"></ul>
+        </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
